@@ -57,11 +57,11 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding-top: calc(var(--index) * 3);
-	padding-left: calc(var(--index) * 3);
+	padding-left: calc(var(--index) * 4);
 }
 
 .master__text {
-	width: 60%;
+	width: 70%;
 }
 
 .orange_text {
@@ -70,8 +70,9 @@
 
 .master__text__title {
 	color: white;
-	font-size: calc(var(--index) * 2.5);
+	font-size: calc(var(--index) * 2.7);
 	font-weight: 800;
+	margin-bottom: 1vh;
 }
 
 .master__text__desc {
@@ -80,7 +81,7 @@
 }
 
 .master__phone_sender {
-	width: 60%;
+	width: 70%;
 	margin-top: calc(var(--index) * 3);
 }
 
@@ -110,11 +111,12 @@
 .input_button button {
 	border-radius: 3em;
 	margin-left: auto;
-	padding: 0 calc(var(--index) * 1.5);
+	padding: 0 calc(var(--index) * 1.4);
 	font-size: calc(var(--index) * 0.6);
 	font-weight: 600;
 	background-color: #ffae00;
 	color: white;
+	letter-spacing: 2px;
 }
 
 .master__phone_sender__text {
