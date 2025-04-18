@@ -1,0 +1,52 @@
+:root {
+	--index: calc(1vw + 1vh);
+}
+
+* {
+	color: #1e2530;
+	font-family: sans-serif;
+}
+
+.header {
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: row;
+	height: calc(var(--index) * 2.5);
+	padding: calc(var(--index) * 0.4) calc(var(--index) * 1.2);
+	align-items: center;
+}
+
+.header__nav {
+	margin-left: calc(var(--index) * 2);
+}
+
+.header__nav ul {
+	display: flex;
+	flex-direction: row;
+	gap: var(--index);
+}
+
+.header__logo {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header__logo__img {
+	width: calc(var(--index) * 2);
+	height: calc(var(--index) * 2);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.header__logo_name {
+	margin-left: calc(var(--index) * 0.4);
+	font-size: calc(var(--index) * 1);
+	font-weight: 700;
+	color: #ffae00;
+}
+
+.header__phone_number {
+	margin-left: auto;
+	font-weight: 600;
+}
