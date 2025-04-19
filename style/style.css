@@ -135,8 +135,7 @@
 	position: absolute;
 	bottom: 0;
 	right: 0;
-	width: calc(var(--index) * 30);
-	height: calc(var(--index) * 25);
+	width: calc(var(--index) * 28);
+	height: calc(var(--index) * 28);
 	background-size: cover;
-	transform: scaleX(-1);
 }
