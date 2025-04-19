@@ -324,3 +324,116 @@ h1 {
 	position: absolute;
 	top: calc(var(--index) * -0.2);
 }
+
+.promotion {
+	position: relative;
+	background-color: #f2f2f2;
+	padding: calc(var(--index) * 3) calc(var(--index) * 3);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	gap: calc(var(--index) * 2);
+}
+
+.promotion svg {
+	width: 100%;
+	height: auto;
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.promotion__time {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	align-items: center;
+	justify-content: center;
+	gap: calc(var(--index) * 0.5);
+}
+
+.promotion__time__title h1 {
+	font-size: calc(var(--index) * 2);
+	text-align: center;
+}
+
+.promotion__time__timer {
+	display: flex;
+	flex-direction: row;
+	gap: calc(var(--index));
+}
+
+.promotion__time__timer__block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: calc(var(--index) * 0.2) calc(var(--index) * 0.3);
+	border-radius: 1em;
+
+	background-color: #ffae00;
+}
+
+.promotion__time__timer__block__num {
+	background-color: #ffcf68;
+	padding: calc(var(--index) * 0.5) calc(var(--index) * 0.3);
+	border-radius: 1em;
+}
+
+.promotion__time__timer__block__num span {
+	color: white;
+	font-size: calc(var(--index) * 1.5);
+	font-weight: 600;
+}
+
+.promotion__time__timer__block__desc {
+	color: white;
+	font-size: calc(var(--index) * 0.7);
+	margin-top: calc(var(--index) * 0.2);
+}
+
+.promotion__time__text {
+	color: #1e2530;
+	font-size: calc(var(--index) * 1.3);
+	font-weight: 600;
+}
+
+.promotion__call {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--index) * 0.5);
+}
+
+.promotion__call h2 {
+	font-size: calc(var(--index) * 2);
+	font-weight: 800;
+}
+
+.promotion__call p {
+	font-size: calc(var(--index) * 1);
+}
+
+.promotion__call a {
+	color: white;
+	background-color: #ffae00;
+	border-radius: 2em;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	width: fit-content;
+	padding: calc(var(--index) * 0.5) calc(var(--index) * 0.6);
+	font-size: calc(var(--index));
+	font-weight: 600;
+}
+
+.call_icon {
+	background-size: cover;
+	width: calc(var(--index));
+	height: calc(var(--index));
+	margin-right: calc(var(--index) * 0.5);
+}

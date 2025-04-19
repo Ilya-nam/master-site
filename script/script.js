@@ -32,3 +32,50 @@ document.addEventListener('DOMContentLoaded', function () {
 		navButtons[0].click()
 	}
 })
+
+window.addEventListener('DOMContentLoaded', () => {
+	// Задаём стартовое время
+	let hours = 2
+	let minutes = 10
+	let seconds = 0
+
+	// Вычисляем общее количество секунд
+	let totalSeconds = hours * 3600 + minutes * 60 + seconds
+
+	function updateTimer() {
+		if (totalSeconds <= 0) {
+			// Когда таймер доходит до нуля — ставим все 00 и останавливаем
+			document.getElementById('days').textContent = '00'
+			document.getElementById('hours').textContent = '00'
+			document.getElementById('minutes').textContent = '00'
+			document.getElementById('seconds').textContent = '00'
+			clearInterval(timerInterval)
+			return
+		}
+
+		// Считаем дни, часы, минуты и секунды
+		const days = Math.floor(totalSeconds / (3600 * 24))
+		const hrs = Math.floor((totalSeconds % (3600 * 24)) / 3600)
+		const mins = Math.floor((totalSeconds % 3600) / 60)
+		const secs = totalSeconds % 60
+
+		// Обновляем DOM
+		document.getElementById('days').textContent = String(days).padStart(2, '0')
+		document.getElementById('hours').textContent = String(hrs).padStart(2, '0')
+		document.getElementById('minutes').textContent = String(mins).padStart(
+			2,
+			'0'
+		)
+		document.getElementById('seconds').textContent = String(secs).padStart(
+			2,
+			'0'
+		)
+
+		// Уменьшаем общее количество секунд
+		totalSeconds--
+	}
+
+	// Запускаем таймер
+	updateTimer()
+	const timerInterval = setInterval(updateTimer, 1000)
+})
