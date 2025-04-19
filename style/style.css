@@ -199,7 +199,7 @@ h1 {
 	padding: calc(var(--index) * 4) calc(var(--index) * 4);
 }
 
-.services svg {
+.services__top_svg {
 	width: 100%;
 	height: auto;
 	display: block;
@@ -336,12 +336,12 @@ h1 {
 	gap: calc(var(--index) * 2);
 }
 
-.promotion svg {
+.services__bottom_svg {
 	width: 100%;
 	height: auto;
 	display: block;
 	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
 	z-index: 1;
 }
