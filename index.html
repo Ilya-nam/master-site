@@ -128,19 +128,46 @@
 				</div>
 			</div>
 			<div class="services">
+				<svg
+					width="1440"
+					height="91"
+					viewBox="0 0 1440 91"
+					fill="none"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						opacity="0.25"
+						d="M0 0V25.4383C57.348 37.6381 124.308 43.117 189.6 40.8254C274.032 37.8744 353.196 22.5202 437.76 20.2176C526.368 17.8216 614.808 29.4939 699.6 39.5945C782.724 49.4862 865.56 53.2671 950.88 46.7825C994.26 43.4852 1034.7 36.9786 1076.22 30.6589C1187.39 13.7385 1335.6 -7.85295 1440 28.8344V0H0Z"
+						fill="white"
+					/>
+					<path
+						opacity="0.5"
+						d="M0 0V5.31843C15.6 12.4198 33.168 19.1275 57.228 24.2374C119.292 37.4309 198 37.34 269.496 30.8072C306.876 27.3928 341.604 22.0373 377.1 17.4186C426.204 11.0271 478.776 1.94437 534.096 0.709797C577.608 -0.248934 619.176 3.87865 652.416 11.3265C690.54 19.8676 727.2 32.1831 776.772 35.8834C825.3 39.5131 874.392 33.6329 919.728 27.7157C965.064 21.7985 1009.92 14.5963 1060.03 13.2338C1131.71 11.2659 1195.97 20.9306 1262.71 26.2995C1298.95 29.2127 1333.51 28.3751 1367.22 23.7765C1394.14 20.1132 1424.82 14.7174 1440 7.21234V0H0Z"
+						fill="white"
+					/>
+					<path
+						d="M0 0V2.29141C179.916 24.013 376.908 29.0273 570.996 17.326C622.596 14.2165 672.072 9.13716 724.128 6.55678C794.928 3.04436 859.104 11.5385 922.8 20.9646C993.516 31.4286 1063.2 38.7627 1141.44 36.6301C1245.28 33.7811 1348.39 18.0261 1440 2.11233V0H0Z"
+						fill="#F2F2F2"
+					/>
+				</svg>
+
 				<div class="services__header">
 					<h1>Наши услуги</h1>
 					<nav>
 						<ul>
-							<li><button>Ремонт компьютеров</button></li>
-							<li><button>Ремонт ноутбуков</button></li>
-							<li><button>Ремонт принтеров</button></li>
-							<li><button>Ремонт телевизоров</button></li>
+							<li>
+								<button class="services__nav services__nav--active">
+									Ремонт компьютеров
+								</button>
+							</li>
+							<li><button class="services__nav">Ремонт ноутбуков</button></li>
+							<li><button class="services__nav">Ремонт принтеров</button></li>
+							<li><button class="services__nav">Ремонт телевизоров</button></li>
 						</ul>
 					</nav>
 				</div>
 				<div class="services__desc">
-					<div class="services__desc__comp services__desc--active">
+					<div class="services__desc__block services__desc__block--active">
 						<div
 							class="services__desc__image"
 							style="background-image: url(images/comp.png)"
@@ -155,17 +182,17 @@
 						</div>
 						<div class="services__desc__price">
 							<div class="services__desc__price__block_1">
-								<p>цена услуги</p>
-								<p>от 500р</p>
+								<p class="price_name">цена услуги</p>
+								<p class="price_count">от 500р</p>
 							</div>
 							<div class="services__desc__price__block_2">
-								<p>выезд</p>
-								<p>БЕСПЛАТНО</p>
+								<p class="price_name">выезд</p>
+								<p class="price_count">БЕСПЛАТНО</p>
 							</div>
 						</div>
 						<button>ЗАКАЗАТЬ</button>
 					</div>
-					<div class="services__desc__nout">
+					<div class="services__desc__block services__desc__block--inactive">
 						<div
 							class="services__desc__image"
 							style="background-image: url(images/nout.png)"
@@ -180,17 +207,17 @@
 						</div>
 						<div class="services__desc__price">
 							<div class="services__desc__price__block_1">
-								<p>цена услуги</p>
-								<p>от 500р</p>
+								<p class="price_name">цена услуги</p>
+								<p class="price_count">от 500р</p>
 							</div>
 							<div class="services__desc__price__block_2">
-								<p>выезд</p>
-								<p>БЕСПЛАТНО</p>
+								<p class="price_name">выезд</p>
+								<p class="price_count">БЕСПЛАТНО</p>
 							</div>
 						</div>
 						<button>ЗАКАЗАТЬ</button>
 					</div>
-					<div class="services__desc__print">
+					<div class="services__desc__block services__desc__block--inactive">
 						<div
 							class="services__desc__image"
 							style="background-image: url(images/print.png)"
@@ -205,17 +232,17 @@
 						</div>
 						<div class="services__desc__price">
 							<div class="services__desc__price__block_1">
-								<p>цена услуги</p>
-								<p>от 500р</p>
+								<p class="price_name">цена услуги</p>
+								<p class="price_count">от 500р</p>
 							</div>
 							<div class="services__desc__price__block_2">
-								<p>выезд</p>
-								<p>БЕСПЛАТНО</p>
+								<p class="price_name">выезд</p>
+								<p class="price_count">БЕСПЛАТНО</p>
 							</div>
 						</div>
 						<button>ЗАКАЗАТЬ</button>
 					</div>
-					<div class="services__desc__tv">
+					<div class="services__desc__block services__desc__block--inactive">
 						<div
 							class="services__desc__image"
 							style="background-image: url(images/tv.png)"
@@ -230,12 +257,12 @@
 						</div>
 						<div class="services__desc__price">
 							<div class="services__desc__price__block_1">
-								<p>цена услуги</p>
-								<p>от 500р</p>
+								<p class="price_name">цена услуги</p>
+								<p class="price_count">от 500р</p>
 							</div>
 							<div class="services__desc__price__block_2">
-								<p>выезд</p>
-								<p>БЕСПЛАТНО</p>
+								<p class="price_name">выезд</p>
+								<p class="price_count">БЕСПЛАТНО</p>
 							</div>
 						</div>
 						<button>ЗАКАЗАТЬ</button>
